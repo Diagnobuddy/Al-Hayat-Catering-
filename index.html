@@ -417,7 +417,12 @@
                 const active = i === index;
                 slide.style.opacity = active ? '1' : '0';
                 const img = slide.querySelector('.slide-img');
-                img.classList.toggle('ken-burns', active);
+                if (active) {
+                    // restart zoom only on the incoming slide; outgoing slide keeps its zoom while fading out
+                    img.classList.remove('ken-burns');
+                    void img.offsetWidth;
+                    img.classList.add('ken-burns');
+                }
             });
             dots.forEach((dot, i) => {
                 const active = i === index;
