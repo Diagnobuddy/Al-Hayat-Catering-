@@ -35,6 +35,10 @@
             }
         }
     </script>
+    <style>
+        @keyframes kenBurns { from { transform: scale(1); } to { transform: scale(1.12); } }
+        .ken-burns { animation: kenBurns 6s ease-out forwards; }
+    </style>
 </head>
 <body class="bg-charcoal-950 text-gray-200 font-sans antialiased selection:bg-gold-500 selection:text-charcoal-950">
 
@@ -76,86 +80,86 @@
         </div>
     </header>
 
-    <!-- Main Hero Section with User Images in Slider -->
-    <section id="home" class="relative bg-charcoal-900 py-16 px-4">
-        <div class="max-w-6xl mx-auto space-y-10">
-            
-            <div class="text-center space-y-4">
-                <span class="inline-block px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 font-bold text-xs uppercase tracking-wider">
-                    The Best Wedding Caterer in Town !
+    <!-- Main Hero Section: Full-Screen Background Slider -->
+    <section id="home" class="relative min-h-[calc(100vh-80px)] overflow-hidden bg-charcoal-950" onmouseenter="pauseSlider()" onmouseleave="startSlider()">
+
+        <!-- Background Slides -->
+        <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-100">
+            <img src="Gemini_Generated_Image_rdfh1wrdfh1wrdfh (2).png" alt="Shahi Dastarkhwan & Biryani" class="slide-img w-full h-full object-cover text-transparent">
+        </div>
+        <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0">
+            <img src="Gemini_Generated_Image_rdfh1wrdfh1wrdfh (1).png" alt="Royal Desserts Station" class="slide-img w-full h-full object-cover text-transparent">
+        </div>
+        <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0">
+            <img src="Gemini_Generated_Image_rdfh1wrdfh1wrdfh.png" alt="Live Kebabs Counter" class="slide-img w-full h-full object-cover text-transparent">
+        </div>
+
+        <!-- Dark Overlay for text readability -->
+        <div class="absolute inset-0 bg-gradient-to-b from-charcoal-950/70 via-charcoal-950/50 to-charcoal-950"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-charcoal-950/60 via-transparent to-charcoal-950/60"></div>
+
+        <!-- Hero Content (on top of slider) -->
+        <div class="relative z-10 min-h-[calc(100vh-80px)] flex flex-col items-center justify-center text-center px-4 pt-12 pb-24">
+            <div class="max-w-4xl space-y-5">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-gold-500/15 border border-gold-500/40 text-gold-400 font-bold text-xs uppercase tracking-wider backdrop-blur-sm">
+                    The Best Wedding Caterer in Town!
                 </span>
-                <h1 class="font-serif text-4xl sm:text-6xl font-bold text-white tracking-tight">
+                <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight drop-shadow-2xl">
                     Welcome to <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-200 to-gold-500">Al-Hayaat Catering</span>
                 </h1>
                 <p class="text-base sm:text-xl font-bold text-gold-400">
                     Loved at first bite • Long remembered
                 </p>
-                <p class="max-w-2xl mx-auto text-gray-400 text-sm sm:text-base font-light">
+                <p class="max-w-2xl mx-auto text-gray-200 text-sm sm:text-base font-light">
                     Delicious Food • Courteous Service • Making Guests Happy! Specializing in Shadi, Walima, Aqeeqa, Niyaz, Manjha, and Engagement functions under the leadership of Mr. Sohail Khan.
                 </p>
-            </div>
 
-            <!-- Main Home Slider Carousel using your generated images -->
-            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-gold-500/40 bg-charcoal-950 aspect-video max-h-[550px]">
-                <!-- Slide 1 -->
-                <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-100 flex items-center justify-center">
-                    <img src="Gemini_Generated_Image_rdfh1wrdfh1wrdfh (2).png" alt="Shahi Dastarkhwan & Biryani" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent flex items-end p-6 sm:p-12">
-                        <div>
-                            <span class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Signature Feast</span>
-                            <h3 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2">Shahi Dastarkhwan & Awadhi Dum Biryani</h3>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
-                    <img src="Gemini_Generated_Image_rdfh1wrdfh1wrdfh (1).png" alt="Royal Desserts Station" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent flex items-end p-6 sm:p-12">
-                        <div>
-                            <span class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Royal Sweets</span>
-                            <h3 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2">Shahi Tukda & Traditional Dessert Bar</h3>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
-                    <img src="Gemini_Generated_Image_rdfh1wrdfh1wrdfh.png" alt="Live Kebabs Counter" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent flex items-end p-6 sm:p-12">
-                        <div>
-                            <span class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Live Counters</span>
-                            <h3 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2">Sizzling Galouti & Seekh Kebabs</h3>
-                        </div>
-                    </div>
+                <!-- Current slide caption -->
+                <div class="pt-2 h-16">
+                    <span id="slide-tag" class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Signature Feast</span>
+                    <h3 id="slide-title" class="font-serif text-lg sm:text-2xl font-semibold text-white mt-2 transition-opacity duration-500">Shahi Dastarkhwan & Awadhi Dum Biryani</h3>
                 </div>
 
-                <!-- Slider Controls -->
-                <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-950/80 border border-gold-500/50 text-gold-400 flex items-center justify-center hover:bg-gold-500 hover:text-charcoal-950 transition shadow-lg"><i class="fa-solid fa-chevron-left text-lg"></i></button>
-                <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-950/80 border border-gold-500/50 text-gold-400 flex items-center justify-center hover:bg-gold-500 hover:text-charcoal-950 transition shadow-lg"><i class="fa-solid fa-chevron-right text-lg"></i></button>
-            </div>
-
-            <!-- Highlights Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
-                <div class="p-4 rounded-2xl bg-charcoal-950 border border-gold-500/20 text-center">
-                    <div class="font-serif text-xl font-bold text-gold-400">Biryani Experts</div>
-                    <div class="text-xs text-gray-400 mt-1">Authentic Dum Biryani</div>
-                </div>
-                <div class="p-4 rounded-2xl bg-charcoal-950 border border-gold-500/20 text-center">
-                    <div class="font-serif text-xl font-bold text-gold-400">100% Halal</div>
-                    <div class="text-xs text-gray-400 mt-1">Non-Veg Specialists</div>
-                </div>
-                <div class="p-4 rounded-2xl bg-charcoal-950 border border-gold-500/20 text-center">
-                    <div class="font-serif text-xl font-bold text-gold-400">Quality First</div>
-                    <div class="text-xs text-gray-400 mt-1">Fresh Ingredients</div>
-                </div>
-                <div class="p-4 rounded-2xl bg-charcoal-950 border border-gold-500/20 text-center">
-                    <div class="font-serif text-xl font-bold text-gold-400">Pure Hygiene</div>
-                    <div class="text-xs text-gray-400 mt-1">Uncompromised</div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                    <a href="#contact" class="px-8 py-3.5 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 text-charcoal-950 font-bold text-sm hover:from-gold-400 hover:to-gold-500 transition shadow-lg shadow-gold-500/20">Book Your Event</a>
+                    <a href="#menu" class="px-8 py-3.5 rounded-full border border-gold-500/60 text-gold-400 font-bold text-sm hover:bg-gold-500/10 transition backdrop-blur-sm">View Menu</a>
                 </div>
             </div>
+        </div>
 
+        <!-- Slider Controls -->
+        <button onclick="prevSlide()" aria-label="Previous slide" class="absolute z-20 left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-950/60 border border-gold-500/50 text-gold-400 hidden sm:flex items-center justify-center hover:bg-gold-500 hover:text-charcoal-950 transition shadow-lg backdrop-blur-sm"><i class="fa-solid fa-chevron-left text-lg"></i></button>
+        <button onclick="nextSlide()" aria-label="Next slide" class="absolute z-20 right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-950/60 border border-gold-500/50 text-gold-400 hidden sm:flex items-center justify-center hover:bg-gold-500 hover:text-charcoal-950 transition shadow-lg backdrop-blur-sm"><i class="fa-solid fa-chevron-right text-lg"></i></button>
+
+        <!-- Slider Dots -->
+        <div class="absolute z-20 bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
+            <button onclick="goToSlide(0)" aria-label="Slide 1" class="slider-dot h-2.5 rounded-full transition-all duration-500 bg-gold-400 w-8"></button>
+            <button onclick="goToSlide(1)" aria-label="Slide 2" class="slider-dot h-2.5 rounded-full transition-all duration-500 bg-white/40 w-2.5"></button>
+            <button onclick="goToSlide(2)" aria-label="Slide 3" class="slider-dot h-2.5 rounded-full transition-all duration-500 bg-white/40 w-2.5"></button>
         </div>
     </section>
 
+    <!-- Highlights Strip -->
+    <section class="bg-charcoal-900 py-12 px-4 border-b border-gold-500/20">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="p-4 rounded-2xl bg-charcoal-950 border border-gold-500/20 text-center">
+                <div class="font-serif text-xl font-bold text-gold-400">Biryani Experts</div>
+                <div class="text-xs text-gray-400 mt-1">Authentic Dum Biryani</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-charcoal-950 border border-gold-500/20 text-center">
+                <div class="font-serif text-xl font-bold text-gold-400">100% Halal</div>
+                <div class="text-xs text-gray-400 mt-1">Non-Veg Specialists</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-charcoal-950 border border-gold-500/20 text-center">
+                <div class="font-serif text-xl font-bold text-gold-400">Quality First</div>
+                <div class="text-xs text-gray-400 mt-1">Fresh Ingredients</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-charcoal-950 border border-gold-500/20 text-center">
+                <div class="font-serif text-xl font-bold text-gold-400">Pure Hygiene</div>
+                <div class="text-xs text-gray-400 mt-1">Uncompromised</div>
+            </div>
+        </div>
+    </section>
     <!-- About Us Section -->
     <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 bg-charcoal-950">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -396,13 +400,45 @@
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
 
-        let currentSlide = 0;
+        // Hero background slider
         const slides = document.querySelectorAll('.slider-item');
+        const dots = document.querySelectorAll('.slider-dot');
+        const slideTag = document.getElementById('slide-tag');
+        const slideTitle = document.getElementById('slide-title');
+        const captions = [
+            { tag: 'Signature Feast', title: 'Shahi Dastarkhwan & Awadhi Dum Biryani' },
+            { tag: 'Royal Sweets', title: 'Shahi Tukda & Traditional Dessert Bar' },
+            { tag: 'Live Counters', title: 'Sizzling Galouti & Seekh Kebabs' }
+        ];
+        let currentSlide = 0;
+        let sliderTimer = null;
 
         function showSlide(index) {
             slides.forEach((slide, i) => {
-                slide.style.opacity = i === index ? '1' : '0';
+                const active = i === index;
+                slide.style.opacity = active ? '1' : '0';
+                const img = slide.querySelector('.slide-img');
+                img.classList.toggle('ken-burns', active);
             });
+            dots.forEach((dot, i) => {
+                const active = i === index;
+                dot.classList.toggle('bg-gold-400', active);
+                dot.classList.toggle('w-8', active);
+                dot.classList.toggle('bg-white/40', !active);
+                dot.classList.toggle('w-2.5', !active);
+            });
+            slideTitle.style.opacity = '0';
+            setTimeout(() => {
+                slideTag.textContent = captions[index].tag;
+                slideTitle.textContent = captions[index].title;
+                slideTitle.style.opacity = '1';
+            }, 300);
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            showSlide(currentSlide);
+            startSlider();
         }
 
         function nextSlide() {
@@ -413,9 +449,31 @@
         function prevSlide() {
             currentSlide = (currentSlide - 1 + slides.length) % slides.length;
             showSlide(currentSlide);
+            startSlider();
         }
 
-        setInterval(nextSlide, 4000);
+        function startSlider() {
+            clearInterval(sliderTimer);
+            sliderTimer = setInterval(nextSlide, 5000);
+        }
+
+        function pauseSlider() {
+            clearInterval(sliderTimer);
+        }
+
+        // Touch swipe support for mobile
+        const hero = document.getElementById('home');
+        let touchStartX = 0;
+        hero.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+        hero.addEventListener('touchend', (e) => {
+            const diff = e.changedTouches[0].screenX - touchStartX;
+            if (Math.abs(diff) > 50) {
+                if (diff < 0) { nextSlide(); startSlider(); } else { prevSlide(); }
+            }
+        }, { passive: true });
+
+        showSlide(0);
+        startSlider();
 
         const form = document.getElementById('contact-form');
         const successMsg = document.getElementById('success-msg');
