@@ -129,7 +129,6 @@
 
             <!-- Slider Container -->
             <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-gold-500/30 bg-charcoal-950 aspect-video max-h-[500px]">
-                <!-- Slide 1 -->
                 <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-100 flex items-center justify-center">
                     <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80" alt="Shahi Dastarkhwan" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-transparent flex items-end p-6 sm:p-10">
@@ -139,7 +138,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Slide 2 -->
                 <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
                     <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Live Kebabs" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-transparent flex items-end p-6 sm:p-10">
@@ -149,7 +147,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Slide 3 -->
                 <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
                     <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80" alt="Royal Desserts" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-transparent flex items-end p-6 sm:p-10">
@@ -160,7 +157,6 @@
                     </div>
                 </div>
 
-                <!-- Slider Controls -->
                 <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-950/80 border border-gold-500/50 text-gold-400 flex items-center justify-center hover:bg-gold-500 hover:text-charcoal-950 transition"><i class="fa-solid fa-chevron-left"></i></button>
                 <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-950/80 border border-gold-500/50 text-gold-400 flex items-center justify-center hover:bg-gold-500 hover:text-charcoal-950 transition"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
@@ -194,7 +190,7 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section with Real Food/Catering Photos -->
     <section id="services" class="py-24 px-4 sm:px-6 lg:px-8 bg-charcoal-900">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
@@ -204,35 +200,65 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-8 rounded-3xl bg-charcoal-950 border border-gold-500/20 hover:border-gold-500/60 transition group">
-                    <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-charcoal-950 transition"><i class="fa-solid fa-ring"></i></div>
-                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Marriage & Wedding Catering</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Grand wedding feasts, Walima banquets, and customized guest dining.</p>
+                <!-- Service 1 -->
+                <div class="rounded-3xl bg-charcoal-950 border border-gold-500/20 overflow-hidden hover:border-gold-500/60 transition group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Wedding" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="font-serif text-xl font-bold text-white">Marriage & Wedding Catering</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed">Grand wedding feasts, Walima banquets, and customized guest dining.</p>
+                    </div>
                 </div>
-                <div class="p-8 rounded-3xl bg-charcoal-950 border border-gold-500/20 hover:border-gold-500/60 transition group">
-                    <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-charcoal-950 transition"><i class="fa-solid fa-baby"></i></div>
-                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Aqeeqa Catering Services</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Blessed newborn celebrations with traditional recipes and pure ingredients.</p>
+                <!-- Service 2 -->
+                <div class="rounded-3xl bg-charcoal-950 border border-gold-500/20 overflow-hidden hover:border-gold-500/60 transition group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80" alt="Aqeeqa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="font-serif text-xl font-bold text-white">Aqeeqa Catering Services</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed">Blessed newborn celebrations with traditional recipes and pure ingredients.</p>
+                    </div>
                 </div>
-                <div class="p-8 rounded-3xl bg-charcoal-950 border border-gold-500/20 hover:border-gold-500/60 transition group">
-                    <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-charcoal-950 transition"><i class="fa-solid fa-hands-praying"></i></div>
-                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Niyaz & Milad Gatherings</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Spiritual gatherings served with traditional sweets and wholesome meals.</p>
+                <!-- Service 3 -->
+                <div class="rounded-3xl bg-charcoal-950 border border-gold-500/20 overflow-hidden hover:border-gold-500/60 transition group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Niyaz" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="font-serif text-xl font-bold text-white">Niyaz & Milad Gatherings</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed">Spiritual gatherings served with traditional sweets and wholesome meals.</p>
+                    </div>
                 </div>
-                <div class="p-8 rounded-3xl bg-charcoal-950 border border-gold-500/20 hover:border-gold-500/60 transition group">
-                    <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-charcoal-950 transition"><i class="fa-solid fa-palette"></i></div>
-                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Manjha & Engagement Parties</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Vibrant pre-wedding setups with delightful snacks and refreshing drinks.</p>
+                <!-- Service 4 -->
+                <div class="rounded-3xl bg-charcoal-950 border border-gold-500/20 overflow-hidden hover:border-gold-500/60 transition group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=600&q=80" alt="Manjha" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="font-serif text-xl font-bold text-white">Manjha & Engagement Parties</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed">Vibrant pre-wedding setups with delightful snacks and refreshing drinks.</p>
+                    </div>
                 </div>
-                <div class="p-8 rounded-3xl bg-charcoal-950 border border-gold-500/20 hover:border-gold-500/60 transition group">
-                    <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-charcoal-950 transition"><i class="fa-solid fa-house"></i></div>
-                    <h3 class="font-serif text-2xl font-bold text-white mb-3">House Warming Catering</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Delightful meals for your family and friends during new home celebrations.</p>
+                <!-- Service 5 -->
+                <div class="rounded-3xl bg-charcoal-950 border border-gold-500/20 overflow-hidden hover:border-gold-500/60 transition group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="House Warming" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="font-serif text-xl font-bold text-white">House Warming Catering</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed">Delightful meals for your family and friends during new home celebrations.</p>
+                    </div>
                 </div>
-                <div class="p-8 rounded-3xl bg-charcoal-950 border border-gold-500/20 hover:border-gold-500/60 transition group">
-                    <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-charcoal-950 transition"><i class="fa-solid fa-briefcase"></i></div>
-                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Corporate & Industrial Events</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Large scale professional outdoor and industrial catering solutions.</p>
+                <!-- Service 6 -->
+                <div class="rounded-3xl bg-charcoal-950 border border-gold-500/20 overflow-hidden hover:border-gold-500/60 transition group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80" alt="Corporate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="font-serif text-xl font-bold text-white">Corporate & Industrial Events</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed">Large scale professional outdoor and industrial catering solutions.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -325,6 +351,7 @@
                         <div>
                             <h5 class="font-bold text-white">Phone Numbers</h5>
                             <p class="text-sm text-gray-300">+91 96346 63124</p>
+                            <p class="text-sm text-gray-300">+91 9176 96 8282</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
