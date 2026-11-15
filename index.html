@@ -43,7 +43,7 @@
                 <a href="#about" class="hover:text-amber-600 transition">About Us</a>
                 <a href="#services" class="hover:text-amber-600 transition">Services</a>
                 <a href="#menu" class="hover:text-amber-600 transition">Menu</a>
-                <a href="#gallery" class="hover:text-amber-600 transition">Gallery</a>
+                <a href="#gallery" class="hover:text-amber-600 transition">Gallery & Slider</a>
                 <a href="#testimonials" class="hover:text-amber-600 transition">Testimonials</a>
                 <a href="#contact" class="hover:text-amber-600 transition">Contact Us</a>
             </nav>
@@ -59,7 +59,7 @@
             <a href="#about" class="block text-gray-700">About Us</a>
             <a href="#services" class="block text-gray-700">Services</a>
             <a href="#menu" class="block text-gray-700">Menu</a>
-            <a href="#gallery" class="block text-gray-700">Gallery</a>
+            <a href="#gallery" class="block text-gray-700">Gallery & Slider</a>
             <a href="#testimonials" class="block text-gray-700">Testimonials</a>
             <a href="#contact" class="block text-gray-700">Contact Us</a>
         </div>
@@ -98,6 +98,54 @@
                     <h3 class="font-bold text-gray-900 text-base">Pure Hygiene</h3>
                     <p class="text-xs text-gray-500 mt-1">Uncompromised Standard</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Image Slider Section -->
+    <section class="py-12 bg-gray-900 text-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-8">
+                <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Visual Highlights</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">Our Royal Catering Grandeur</h2>
+            </div>
+
+            <!-- Slider Container -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-amber-500/30 bg-black aspect-video max-h-[500px]">
+                <!-- Slide 1 -->
+                <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-100 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80" alt="Shahi Dastarkhwan" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6 sm:p-10">
+                        <div>
+                            <span class="bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full uppercase">Signature Feast</span>
+                            <h3 class="text-xl sm:text-2xl font-bold text-white mt-2">Shahi Dastarkhwan & Awadhi Dum Biryani</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Live Kebabs" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6 sm:p-10">
+                        <div>
+                            <span class="bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full uppercase">Live Counters</span>
+                            <h3 class="text-xl sm:text-2xl font-bold text-white mt-2">Sizzling Galouti & Seekh Kebabs</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80" alt="Royal Desserts" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6 sm:p-10">
+                        <div>
+                            <span class="bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full uppercase">Royal Sweets</span>
+                            <h3 class="text-xl sm:text-2xl font-bold text-white mt-2">Shahi Tukda with Thick Saffron Rabri</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-amber-400 flex items-center justify-center hover:bg-black transition"><i class="fa-solid fa-chevron-left"></i></button>
+                <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-amber-400 flex items-center justify-center hover:bg-black transition"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
@@ -227,20 +275,26 @@
                 <p class="text-gray-500">Glimpse of our food quality, Dastarkhwan setups, and live counters.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div class="h-64 bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center p-6 text-center">
-                    <i class="fa-solid fa-utensils text-4xl text-amber-600 mb-3"></i>
-                    <h4 class="font-bold text-gray-900">Shahi Dastarkhwan</h4>
-                    <p class="text-xs text-gray-500 mt-1">Traditional royal dining layout.</p>
+                <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&q=80" alt="Dastarkhwan" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-gray-900">Shahi Dastarkhwan</h4>
+                        <p class="text-xs text-gray-500 mt-1">Traditional royal dining layout.</p>
+                    </div>
                 </div>
-                <div class="h-64 bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center p-6 text-center">
-                    <i class="fa-solid fa-fire-burner text-4xl text-amber-600 mb-3"></i>
-                    <h4 class="font-bold text-gray-900">Live Starters Counter</h4>
-                    <p class="text-xs text-gray-500 mt-1">Fresh kebabs & sizzling snacks.</p>
+                <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Live Counters" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-gray-900">Live Starters Counter</h4>
+                        <p class="text-xs text-gray-500 mt-1">Fresh kebabs & sizzling snacks.</p>
+                    </div>
                 </div>
-                <div class="h-64 bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center p-6 text-center">
-                    <i class="fa-solid fa-cake-candles text-4xl text-amber-600 mb-3"></i>
-                    <h4 class="font-bold text-gray-900">Dessert Station</h4>
-                    <p class="text-xs text-gray-500 mt-1">Shahi tukda and chilled phirni.</p>
+                <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Desserts" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-gray-900">Dessert Station</h4>
+                        <p class="text-xs text-gray-500 mt-1">Shahi tukda and chilled phirni.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -341,11 +395,34 @@
         <p>&copy; 2026 Al-Hayaat Catering (Founder: Mr. Sohail Khan). All Rights Reserved. 100% Halal Assured.</p>
     </footer>
 
-    <!-- Script -->
+    <!-- Script for Slider and Navigation -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+
+        // Image Slider Logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider-item');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? '1' : '0';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Auto slide every 4 seconds
+        setInterval(nextSlide, 4000);
 
         const form = document.getElementById('contact-form');
         const successMsg = document.getElementById('success-msg');
