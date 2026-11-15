@@ -54,13 +54,11 @@
                 </div>
             </a>
 
-            <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
                 <a href="#home" class="text-gold-400 hover:text-gold-300 transition">Home</a>
                 <a href="#about" class="text-gray-300 hover:text-gold-400 transition">About Us</a>
                 <a href="#services" class="text-gray-300 hover:text-gold-400 transition">Services</a>
                 <a href="#menu" class="text-gray-300 hover:text-gold-400 transition">Menu</a>
-                <a href="#gallery" class="text-gray-300 hover:text-gold-400 transition">Gallery & Slider</a>
                 <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 text-charcoal-950 font-semibold hover:from-gold-400 hover:to-gold-500 transition shadow-lg shadow-gold-500/10">Contact Us</a>
             </nav>
 
@@ -69,97 +67,92 @@
             </button>
         </div>
 
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-charcoal-900 border-b border-gold-500/20 px-6 py-4 space-y-4 font-medium text-sm">
             <a href="#home" class="block text-gold-400">Home</a>
             <a href="#about" class="block text-gray-300 hover:text-gold-400">About Us</a>
             <a href="#services" class="block text-gray-300 hover:text-gold-400">Services</a>
             <a href="#menu" class="block text-gray-300 hover:text-gold-400">Menu</a>
-            <a href="#gallery" class="block text-gray-300 hover:text-gold-400">Gallery & Slider</a>
             <a href="#contact" class="block text-center w-full py-2.5 rounded-full bg-gold-500 text-charcoal-950 font-bold">Contact Us</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-charcoal-900 via-emeraldCustom-950/40 to-charcoal-950 py-20 px-4 overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#c5a059_1px,transparent_1px)] [background-size:24px_24px]"></div>
-        <div class="relative max-w-5xl mx-auto text-center space-y-8">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs sm:text-sm tracking-widest uppercase font-semibold">
-                <i class="fa-solid fa-crown text-gold-500"></i> The Best Wedding Caterer in Town !
+    <!-- Main Hero Section with User Images in Slider -->
+    <section id="home" class="relative bg-charcoal-900 py-16 px-4">
+        <div class="max-w-6xl mx-auto space-y-10">
+            
+            <div class="text-center space-y-4">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 font-bold text-xs uppercase tracking-wider">
+                    The Best Wedding Caterer in Town !
+                </span>
+                <h1 class="font-serif text-4xl sm:text-6xl font-bold text-white tracking-tight">
+                    Welcome to <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-200 to-gold-500">Al-Hayaat Catering</span>
+                </h1>
+                <p class="text-base sm:text-xl font-bold text-gold-400">
+                    Loved at first bite • Long remembered
+                </p>
+                <p class="max-w-2xl mx-auto text-gray-400 text-sm sm:text-base font-light">
+                    Delicious Food • Courteous Service • Making Guests Happy! Specializing in Shadi, Walima, Aqeeqa, Niyaz, Manjha, and Engagement functions under the leadership of Mr. Sohail Khan.
+                </p>
             </div>
-            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
-                Welcome to <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-200 to-gold-500">Al-Hayaat Catering</span>
-            </h1>
-            <p class="text-lg sm:text-xl font-light text-gold-400">
-                Loved at first bite • Long remembered
-            </p>
-            <p class="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg font-light leading-relaxed">
-                Delicious Food • Courteous Service • Making Guests Happy! Specializing in Shadi, Walima, Aqeeqa, Niyaz, Manjha, and Engagement functions under the leadership of Mr. Sohail Khan.
-            </p>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 border-t border-gold-500/20 mt-12">
-                <div class="p-4 rounded-2xl bg-charcoal-900/60 border border-gold-500/10">
-                    <div class="font-serif text-2xl font-bold text-gold-400">Biryani Experts</div>
+            <!-- Main Home Slider Carousel using your generated images -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-gold-500/40 bg-charcoal-950 aspect-video max-h-[550px]">
+                <!-- Slide 1 -->
+                <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-100 flex items-center justify-center">
+                    <img src="Gemini_Generated_Image_rdfh1wrdfh1wrdfh (2).png" alt="Shahi Dastarkhwan & Biryani" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent flex items-end p-6 sm:p-12">
+                        <div>
+                            <span class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Signature Feast</span>
+                            <h3 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2">Shahi Dastarkhwan & Awadhi Dum Biryani</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
+                    <img src="Gemini_Generated_Image_rdfh1wrdfh1wrdfh (1).png" alt="Royal Desserts Station" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent flex items-end p-6 sm:p-12">
+                        <div>
+                            <span class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Royal Sweets</span>
+                            <h3 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2">Shahi Tukda & Traditional Dessert Bar</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
+                    <img src="Gemini_Generated_Image_rdfh1wrdfh1wrdfh.png" alt="Live Kebabs Counter" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/40 to-transparent flex items-end p-6 sm:p-12">
+                        <div>
+                            <span class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Live Counters</span>
+                            <h3 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2">Sizzling Galouti & Seekh Kebabs</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-950/80 border border-gold-500/50 text-gold-400 flex items-center justify-center hover:bg-gold-500 hover:text-charcoal-950 transition shadow-lg"><i class="fa-solid fa-chevron-left text-lg"></i></button>
+                <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-950/80 border border-gold-500/50 text-gold-400 flex items-center justify-center hover:bg-gold-500 hover:text-charcoal-950 transition shadow-lg"><i class="fa-solid fa-chevron-right text-lg"></i></button>
+            </div>
+
+            <!-- Highlights Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
+                <div class="p-4 rounded-2xl bg-charcoal-950 border border-gold-500/20 text-center">
+                    <div class="font-serif text-xl font-bold text-gold-400">Biryani Experts</div>
                     <div class="text-xs text-gray-400 mt-1">Authentic Dum Biryani</div>
                 </div>
-                <div class="p-4 rounded-2xl bg-charcoal-900/60 border border-gold-500/10">
-                    <div class="font-serif text-2xl font-bold text-gold-400">100% Halal</div>
+                <div class="p-4 rounded-2xl bg-charcoal-950 border border-gold-500/20 text-center">
+                    <div class="font-serif text-xl font-bold text-gold-400">100% Halal</div>
                     <div class="text-xs text-gray-400 mt-1">Non-Veg Specialists</div>
                 </div>
-                <div class="p-4 rounded-2xl bg-charcoal-900/60 border border-gold-500/10">
-                    <div class="font-serif text-2xl font-bold text-gold-400">Quality First</div>
+                <div class="p-4 rounded-2xl bg-charcoal-950 border border-gold-500/20 text-center">
+                    <div class="font-serif text-xl font-bold text-gold-400">Quality First</div>
                     <div class="text-xs text-gray-400 mt-1">Fresh Ingredients</div>
                 </div>
-                <div class="p-4 rounded-2xl bg-charcoal-900/60 border border-gold-500/10">
-                    <div class="font-serif text-2xl font-bold text-gold-400">Pure Hygiene</div>
+                <div class="p-4 rounded-2xl bg-charcoal-950 border border-gold-500/20 text-center">
+                    <div class="font-serif text-xl font-bold text-gold-400">Pure Hygiene</div>
                     <div class="text-xs text-gray-400 mt-1">Uncompromised</div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Interactive Image Slider Section -->
-    <section id="gallery" class="py-20 px-4 sm:px-6 lg:px-8 bg-charcoal-900">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center space-y-3 mb-12">
-                <span class="text-gold-400 text-sm font-semibold tracking-widest uppercase">Visual Grandeur</span>
-                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">Our Work & Food Gallery</h2>
-                <p class="text-gray-400 text-sm">Explore our royal Dastarkhwan setups, live stations, and delicious delicacies.</p>
-            </div>
-
-            <!-- Slider Container -->
-            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-gold-500/30 bg-charcoal-950 aspect-video max-h-[500px]">
-                <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-100 flex items-center justify-center">
-                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80" alt="Shahi Dastarkhwan" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-transparent flex items-end p-6 sm:p-10">
-                        <div>
-                            <span class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Signature Feast</span>
-                            <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-2">Shahi Dastarkhwan & Awadhi Dum Biryani</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
-                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Live Kebabs" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-transparent flex items-end p-6 sm:p-10">
-                        <div>
-                            <span class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Live Counters</span>
-                            <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-2">Sizzling Galouti & Seekh Kebabs</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
-                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80" alt="Royal Desserts" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-transparent flex items-end p-6 sm:p-10">
-                        <div>
-                            <span class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Royal Sweets</span>
-                            <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-2">Shahi Tukda with Thick Saffron Rabri</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-950/80 border border-gold-500/50 text-gold-400 flex items-center justify-center hover:bg-gold-500 hover:text-charcoal-950 transition"><i class="fa-solid fa-chevron-left"></i></button>
-                <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-950/80 border border-gold-500/50 text-gold-400 flex items-center justify-center hover:bg-gold-500 hover:text-charcoal-950 transition"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
         </div>
     </section>
 
@@ -190,7 +183,7 @@
         </div>
     </section>
 
-    <!-- Services Section with Real Food/Catering Photos -->
+    <!-- Services Section with Real Food Photos -->
     <section id="services" class="py-24 px-4 sm:px-6 lg:px-8 bg-charcoal-900">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
@@ -200,7 +193,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
                 <div class="rounded-3xl bg-charcoal-950 border border-gold-500/20 overflow-hidden hover:border-gold-500/60 transition group">
                     <div class="h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Wedding" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -210,7 +202,6 @@
                         <p class="text-gray-400 text-xs leading-relaxed">Grand wedding feasts, Walima banquets, and customized guest dining.</p>
                     </div>
                 </div>
-                <!-- Service 2 -->
                 <div class="rounded-3xl bg-charcoal-950 border border-gold-500/20 overflow-hidden hover:border-gold-500/60 transition group">
                     <div class="h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80" alt="Aqeeqa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -220,7 +211,6 @@
                         <p class="text-gray-400 text-xs leading-relaxed">Blessed newborn celebrations with traditional recipes and pure ingredients.</p>
                     </div>
                 </div>
-                <!-- Service 3 -->
                 <div class="rounded-3xl bg-charcoal-950 border border-gold-500/20 overflow-hidden hover:border-gold-500/60 transition group">
                     <div class="h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Niyaz" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -230,7 +220,6 @@
                         <p class="text-gray-400 text-xs leading-relaxed">Spiritual gatherings served with traditional sweets and wholesome meals.</p>
                     </div>
                 </div>
-                <!-- Service 4 -->
                 <div class="rounded-3xl bg-charcoal-950 border border-gold-500/20 overflow-hidden hover:border-gold-500/60 transition group">
                     <div class="h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=600&q=80" alt="Manjha" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -240,7 +229,6 @@
                         <p class="text-gray-400 text-xs leading-relaxed">Vibrant pre-wedding setups with delightful snacks and refreshing drinks.</p>
                     </div>
                 </div>
-                <!-- Service 5 -->
                 <div class="rounded-3xl bg-charcoal-950 border border-gold-500/20 overflow-hidden hover:border-gold-500/60 transition group">
                     <div class="h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="House Warming" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -250,7 +238,6 @@
                         <p class="text-gray-400 text-xs leading-relaxed">Delightful meals for your family and friends during new home celebrations.</p>
                     </div>
                 </div>
-                <!-- Service 6 -->
                 <div class="rounded-3xl bg-charcoal-950 border border-gold-500/20 overflow-hidden hover:border-gold-500/60 transition group">
                     <div class="h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80" alt="Corporate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -274,7 +261,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Non-Veg -->
                 <div class="p-8 rounded-3xl bg-charcoal-900 border border-gold-500/20 space-y-4">
                     <h3 class="font-serif text-2xl font-bold text-gold-400">Non-Vegetarian</h3>
                     <p class="text-xs text-gray-300">Our mouth-watering Non-Veg dishes will surely entice your guests! Right from 'Melt in the mouth' starters to mind-blowing Biryanis and yummy gravies.</p>
@@ -285,7 +271,6 @@
                         <li>• Mutton Rogan Josh</li>
                     </ul>
                 </div>
-                <!-- Sweets -->
                 <div class="p-8 rounded-3xl bg-charcoal-900 border border-gold-500/20 space-y-4">
                     <h3 class="font-serif text-2xl font-bold text-gold-400">Sweets</h3>
                     <p class="text-xs text-gray-300">Sweets make the celebrations complete. We serve sensational sweets from Mughal & traditional cuisines that leave a lasting memory!</p>
@@ -296,7 +281,6 @@
                         <li>• Special Zarda Pulao</li>
                     </ul>
                 </div>
-                <!-- Vegetarian -->
                 <div class="p-8 rounded-3xl bg-charcoal-900 border border-gold-500/20 space-y-4">
                     <h3 class="font-serif text-2xl font-bold text-gold-400">Vegetarian</h3>
                     <p class="text-xs text-gray-300">Be it North Indian or South Indian meals, crunchy starters, flavorful ghee rice, and tempting gravies are all in our range.</p>
