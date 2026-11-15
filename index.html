@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al-Hayaat Catering | The Best Wedding & Non-Veg Caterers</title>
+    <title>Al-Hayaat Luxury Catering | 100% Halal Shahi Dastarkhwan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        brandGold: '#c5a059',
-                        brandDark: '#111111',
+                        gold: {
+                            400: '#d4af37',
+                            500: '#c5a059',
+                            600: '#aa823a',
+                        },
+                        charcoal: {
+                            800: '#1a1a1a',
+                            900: '#111111',
+                            950: '#0a0a0a',
+                        },
+                        emeraldCustom: {
+                            900: '#064e3b',
+                            950: '#022c22',
+                        }
                     },
                     fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
                     }
                 }
@@ -23,217 +36,223 @@
         }
     </script>
 </head>
-<body class="bg-white text-gray-800 font-sans antialiased">
+<body class="bg-charcoal-950 text-gray-200 font-sans antialiased selection:bg-gold-500 selection:text-charcoal-950">
 
-    <!-- Top Bar -->
-    <div class="bg-gray-900 text-amber-400 text-xs sm:text-sm py-2 px-4 text-center font-medium border-b border-gray-800">
-        <i class="fa-solid fa-phone mr-2"></i> +91 96346 63124 | info@alhayaatcatering.com | 100% Halal Assured
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-emeraldCustom-950 via-emeraldCustom-900 to-charcoal-900 text-gold-400 text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide border-b border-gold-500/20">
+        <i class="fa-solid fa-phone mr-2"></i> +91 96346 63124 | info@alhayaatcatering.com | Founder: Mr. Sohail Khan | 100% Halal Assured
     </div>
 
-    <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-charcoal-900/95 backdrop-blur-md border-b border-gold-500/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-2">
-                <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900">Al-Hayaat <span class="text-amber-600">Catering</span></span>
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-gold-600 to-gold-400 flex items-center justify-center text-charcoal-950 font-serif font-bold text-xl shadow-lg">AH</div>
+                <div>
+                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-200 to-gold-500">Al-Hayaat</span>
+                    <span class="block text-[10px] tracking-[0.25em] text-gold-400/80 uppercase font-semibold">Luxury Catering</span>
+                </div>
             </a>
 
             <!-- Desktop Nav -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-700">
-                <a href="#home" class="text-amber-600 hover:text-amber-700 transition">Home</a>
-                <a href="#about" class="hover:text-amber-600 transition">About Us</a>
-                <a href="#services" class="hover:text-amber-600 transition">Services</a>
-                <a href="#menu" class="hover:text-amber-600 transition">Menu</a>
-                <a href="#gallery" class="hover:text-amber-600 transition">Gallery & Slider</a>
-                <a href="#testimonials" class="hover:text-amber-600 transition">Testimonials</a>
-                <a href="#contact" class="hover:text-amber-600 transition">Contact Us</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+                <a href="#home" class="text-gold-400 hover:text-gold-300 transition">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-gold-400 transition">About Us</a>
+                <a href="#services" class="text-gray-300 hover:text-gold-400 transition">Services</a>
+                <a href="#menu" class="text-gray-300 hover:text-gold-400 transition">Menu</a>
+                <a href="#gallery" class="text-gray-300 hover:text-gold-400 transition">Gallery & Slider</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 text-charcoal-950 font-semibold hover:from-gold-400 hover:to-gold-500 transition shadow-lg shadow-gold-500/10">Contact Us</a>
             </nav>
 
-            <button id="menu-btn" class="md:hidden text-gray-800 text-2xl focus:outline-none">
+            <button id="menu-btn" class="md:hidden text-gold-400 text-2xl focus:outline-none">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-6 py-4 space-y-3 font-semibold text-sm">
-            <a href="#home" class="block text-amber-600">Home</a>
-            <a href="#about" class="block text-gray-700">About Us</a>
-            <a href="#services" class="block text-gray-700">Services</a>
-            <a href="#menu" class="block text-gray-700">Menu</a>
-            <a href="#gallery" class="block text-gray-700">Gallery & Slider</a>
-            <a href="#testimonials" class="block text-gray-700">Testimonials</a>
-            <a href="#contact" class="block text-gray-700">Contact Us</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-charcoal-900 border-b border-gold-500/20 px-6 py-4 space-y-4 font-medium text-sm">
+            <a href="#home" class="block text-gold-400">Home</a>
+            <a href="#about" class="block text-gray-300 hover:text-gold-400">About Us</a>
+            <a href="#services" class="block text-gray-300 hover:text-gold-400">Services</a>
+            <a href="#menu" class="block text-gray-300 hover:text-gold-400">Menu</a>
+            <a href="#gallery" class="block text-gray-300 hover:text-gold-400">Gallery & Slider</a>
+            <a href="#contact" class="block text-center w-full py-2.5 rounded-full bg-gold-500 text-charcoal-950 font-bold">Contact Us</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="relative bg-gradient-to-b from-gray-50 to-white py-20 lg:py-32 px-4 overflow-hidden">
-        <div class="max-w-7xl mx-auto text-center space-y-6">
-            <span class="inline-block px-4 py-1.5 rounded-full bg-amber-100 text-amber-800 font-bold text-xs uppercase tracking-wider">
-                Award Winning Caterer !
-            </span>
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 tracking-tight">
-                The Best Wedding Caterer in <span class="text-amber-600">Town !</span>
+    <section id="home" class="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-charcoal-900 via-emeraldCustom-950/40 to-charcoal-950 py-20 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#c5a059_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="relative max-w-5xl mx-auto text-center space-y-8">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs sm:text-sm tracking-widest uppercase font-semibold">
+                <i class="fa-solid fa-crown text-gold-500"></i> The Best Wedding Caterer in Town !
+            </div>
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
+                Welcome to <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-200 to-gold-500">Al-Hayaat Catering</span>
             </h1>
-            <p class="text-lg sm:text-2xl font-bold text-gray-700">
-                Al-Hayaat Catering — <span class="text-amber-600">Loved at first bite • Long remembered</span>
+            <p class="text-lg sm:text-xl font-light text-gold-400">
+                Loved at first bite • Long remembered
             </p>
-            <p class="max-w-2xl mx-auto text-gray-500 text-sm sm:text-base">
-                Delicious Food • Courteous Service • Making Guests Happy! Specializing in Shadi, Walima, Aqeeqa, Niyaz, Manjha, and Engagement functions.
+            <p class="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg font-light leading-relaxed">
+                Delicious Food • Courteous Service • Making Guests Happy! Specializing in Shadi, Walima, Aqeeqa, Niyaz, Manjha, and Engagement functions under the leadership of Mr. Sohail Khan.
             </p>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8">
-                <div class="p-4 bg-white rounded-2xl shadow-sm border border-gray-100 text-center">
-                    <h3 class="font-bold text-gray-900 text-base">The Biryani Experts</h3>
-                    <p class="text-xs text-gray-500 mt-1">Authentic Dum Biryani</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 border-t border-gold-500/20 mt-12">
+                <div class="p-4 rounded-2xl bg-charcoal-900/60 border border-gold-500/10">
+                    <div class="font-serif text-2xl font-bold text-gold-400">Biryani Experts</div>
+                    <div class="text-xs text-gray-400 mt-1">Authentic Dum Biryani</div>
                 </div>
-                <div class="p-4 bg-white rounded-2xl shadow-sm border border-gray-100 text-center">
-                    <h3 class="font-bold text-gray-900 text-base">Non-Veg Specialists</h3>
-                    <p class="text-xs text-gray-500 mt-1">100% Halal Meat</p>
+                <div class="p-4 rounded-2xl bg-charcoal-900/60 border border-gold-500/10">
+                    <div class="font-serif text-2xl font-bold text-gold-400">100% Halal</div>
+                    <div class="text-xs text-gray-400 mt-1">Non-Veg Specialists</div>
                 </div>
-                <div class="p-4 bg-white rounded-2xl shadow-sm border border-gray-100 text-center">
-                    <h3 class="font-bold text-gray-900 text-base">Quality First</h3>
-                    <p class="text-xs text-gray-500 mt-1">Best Fresh Ingredients</p>
+                <div class="p-4 rounded-2xl bg-charcoal-900/60 border border-gold-500/10">
+                    <div class="font-serif text-2xl font-bold text-gold-400">Quality First</div>
+                    <div class="text-xs text-gray-400 mt-1">Fresh Ingredients</div>
                 </div>
-                <div class="p-4 bg-white rounded-2xl shadow-sm border border-gray-100 text-center">
-                    <h3 class="font-bold text-gray-900 text-base">Pure Hygiene</h3>
-                    <p class="text-xs text-gray-500 mt-1">Uncompromised Standard</p>
+                <div class="p-4 rounded-2xl bg-charcoal-900/60 border border-gold-500/10">
+                    <div class="font-serif text-2xl font-bold text-gold-400">Pure Hygiene</div>
+                    <div class="text-xs text-gray-400 mt-1">Uncompromised</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Interactive Image Slider Section -->
-    <section class="py-12 bg-gray-900 text-white">
-        <div class="max-w-5xl mx-auto px-4">
-            <div class="text-center mb-8">
-                <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Visual Highlights</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">Our Royal Catering Grandeur</h2>
+    <section id="gallery" class="py-20 px-4 sm:px-6 lg:px-8 bg-charcoal-900">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center space-y-3 mb-12">
+                <span class="text-gold-400 text-sm font-semibold tracking-widest uppercase">Visual Grandeur</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">Our Work & Food Gallery</h2>
+                <p class="text-gray-400 text-sm">Explore our royal Dastarkhwan setups, live stations, and delicious delicacies.</p>
             </div>
 
             <!-- Slider Container -->
-            <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-amber-500/30 bg-black aspect-video max-h-[500px]">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-gold-500/30 bg-charcoal-950 aspect-video max-h-[500px]">
                 <!-- Slide 1 -->
                 <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-100 flex items-center justify-center">
                     <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80" alt="Shahi Dastarkhwan" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6 sm:p-10">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-transparent flex items-end p-6 sm:p-10">
                         <div>
-                            <span class="bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full uppercase">Signature Feast</span>
-                            <h3 class="text-xl sm:text-2xl font-bold text-white mt-2">Shahi Dastarkhwan & Awadhi Dum Biryani</h3>
+                            <span class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Signature Feast</span>
+                            <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-2">Shahi Dastarkhwan & Awadhi Dum Biryani</h3>
                         </div>
                     </div>
                 </div>
                 <!-- Slide 2 -->
                 <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
                     <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Live Kebabs" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6 sm:p-10">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-transparent flex items-end p-6 sm:p-10">
                         <div>
-                            <span class="bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full uppercase">Live Counters</span>
-                            <h3 class="text-xl sm:text-2xl font-bold text-white mt-2">Sizzling Galouti & Seekh Kebabs</h3>
+                            <span class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Live Counters</span>
+                            <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-2">Sizzling Galouti & Seekh Kebabs</h3>
                         </div>
                     </div>
                 </div>
                 <!-- Slide 3 -->
                 <div class="slider-item absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center justify-center">
                     <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80" alt="Royal Desserts" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6 sm:p-10">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-transparent flex items-end p-6 sm:p-10">
                         <div>
-                            <span class="bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full uppercase">Royal Sweets</span>
-                            <h3 class="text-xl sm:text-2xl font-bold text-white mt-2">Shahi Tukda with Thick Saffron Rabri</h3>
+                            <span class="bg-gold-500 text-charcoal-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Royal Sweets</span>
+                            <h3 class="font-serif text-xl sm:text-3xl font-bold text-white mt-2">Shahi Tukda with Thick Saffron Rabri</h3>
                         </div>
                     </div>
                 </div>
 
                 <!-- Slider Controls -->
-                <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-amber-400 flex items-center justify-center hover:bg-black transition"><i class="fa-solid fa-chevron-left"></i></button>
-                <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-amber-400 flex items-center justify-center hover:bg-black transition"><i class="fa-solid fa-chevron-right"></i></button>
+                <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-950/80 border border-gold-500/50 text-gold-400 flex items-center justify-center hover:bg-gold-500 hover:text-charcoal-950 transition"><i class="fa-solid fa-chevron-left"></i></button>
+                <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-charcoal-950/80 border border-gold-500/50 text-gold-400 flex items-center justify-center hover:bg-gold-500 hover:text-charcoal-950 transition"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-100">
+    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 bg-charcoal-950">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
-                <span class="text-amber-600 font-bold text-sm uppercase tracking-wider">Our Story</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">About Us</h2>
-                <p class="text-gray-600 text-base leading-relaxed">
+                <span class="text-gold-400 text-sm font-semibold tracking-widest uppercase">Our Story</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight">
+                    About <span class="text-gold-400">Al-Hayaat Catering</span>
+                </h2>
+                <p class="text-gray-300 text-base leading-relaxed font-light">
                     Founded by <strong>Mr. Sohail Khan</strong>, Al-Hayaat Catering is one of the most trusted names and among the Best Wedding Catering Services. We serve sumptuous food to fulfill your each and every catering need. From catering for your dream wedding to serving for your special occasions like Shadi, Walima, Aqeeqa, Niyaz, and Manjha, we can customize the entire food experience for you and your guests.
                 </p>
-                <p class="text-gray-600 text-base leading-relaxed">
+                <p class="text-gray-300 text-base leading-relaxed font-light">
                     It's our privilege under the leadership of Mr. Sohail Khan to provide an unforgettable experience to your taste buds and excellent service that makes your function a grand success!
                 </p>
             </div>
-            <div class="bg-amber-50 rounded-3xl p-8 border border-amber-100 space-y-4">
-                <h3 class="text-2xl font-bold text-gray-900">Why Choose Al-Hayaat?</h3>
-                <ul class="space-y-3 text-sm text-gray-700 font-medium">
-                    <li><i class="fa-solid fa-circle-check text-amber-600 mr-2"></i> Founded & Managed by Mr. Sohail Khan</li>
-                    <li><i class="fa-solid fa-circle-check text-amber-600 mr-2"></i> Tailored Menus for Shadi, Walima & Aqeeqa</li>
-                    <li><i class="fa-solid fa-circle-check text-amber-600 mr-2"></i> Professional & Courteous Serving Staff</li>
-                    <li><i class="fa-solid fa-circle-check text-amber-600 mr-2"></i> Strict 100% Halal & Hygiene Standards</li>
+            <div class="bg-charcoal-900 border border-gold-500/30 rounded-3xl p-8 space-y-4 shadow-xl">
+                <h3 class="font-serif text-2xl font-bold text-white">Why Choose Al-Hayaat?</h3>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li><i class="fa-solid fa-check text-gold-400 mr-2"></i> Founded & Managed by Mr. Sohail Khan</li>
+                    <li><i class="fa-solid fa-check text-gold-400 mr-2"></i> Tailored Menus for Shadi, Walima & Aqeeqa</li>
+                    <li><i class="fa-solid fa-check text-gold-400 mr-2"></i> Professional & Courteous Serving Staff</li>
+                    <li><i class="fa-solid fa-check text-gold-400 mr-2"></i> Strict 100% Halal & Hygiene Standards</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="services" class="py-24 px-4 sm:px-6 lg:px-8 bg-charcoal-900">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <span class="text-amber-600 font-bold text-sm uppercase tracking-wider">Services</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Our Catering Services</h2>
-                <p class="text-gray-500 text-sm sm:text-base">We cater to all types of weddings, parties, and corporate events with perfection.</p>
+                <span class="text-gold-400 text-sm font-semibold tracking-widest uppercase">Services</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">Our Catering Services</h2>
+                <p class="text-gray-400">We cater to all types of weddings, parties, and corporate events with perfection.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4 font-bold"><i class="fa-solid fa-ring"></i></div>
-                    <h3 class="font-bold text-lg text-gray-900 mb-2">Marriage & Wedding Catering</h3>
-                    <p class="text-xs text-gray-500">Grand wedding feasts, Walima banquets, and customized guest dining.</p>
+                <div class="p-8 rounded-3xl bg-charcoal-950 border border-gold-500/20 hover:border-gold-500/60 transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-charcoal-950 transition"><i class="fa-solid fa-ring"></i></div>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Marriage & Wedding Catering</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Grand wedding feasts, Walima banquets, and customized guest dining.</p>
                 </div>
-                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4 font-bold"><i class="fa-solid fa-baby"></i></div>
-                    <h3 class="font-bold text-lg text-gray-900 mb-2">Aqeeqa Catering Services</h3>
-                    <p class="text-xs text-gray-500">Blessed newborn celebrations with traditional recipes and pure ingredients.</p>
+                <div class="p-8 rounded-3xl bg-charcoal-950 border border-gold-500/20 hover:border-gold-500/60 transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-charcoal-950 transition"><i class="fa-solid fa-baby"></i></div>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Aqeeqa Catering Services</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Blessed newborn celebrations with traditional recipes and pure ingredients.</p>
                 </div>
-                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4 font-bold"><i class="fa-solid fa-hands-praying"></i></div>
-                    <h3 class="font-bold text-lg text-gray-900 mb-2">Niyaz & Milad Gatherings</h3>
-                    <p class="text-xs text-gray-500">Spiritual gatherings served with traditional sweets and wholesome meals.</p>
+                <div class="p-8 rounded-3xl bg-charcoal-950 border border-gold-500/20 hover:border-gold-500/60 transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-charcoal-950 transition"><i class="fa-solid fa-hands-praying"></i></div>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Niyaz & Milad Gatherings</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Spiritual gatherings served with traditional sweets and wholesome meals.</p>
                 </div>
-                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4 font-bold"><i class="fa-solid fa-palette"></i></div>
-                    <h3 class="font-bold text-lg text-gray-900 mb-2">Manjha & Engagement Parties</h3>
-                    <p class="text-xs text-gray-500">Vibrant pre-wedding setups with delightful snacks and refreshing drinks.</p>
+                <div class="p-8 rounded-3xl bg-charcoal-950 border border-gold-500/20 hover:border-gold-500/60 transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-charcoal-950 transition"><i class="fa-solid fa-palette"></i></div>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Manjha & Engagement Parties</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Vibrant pre-wedding setups with delightful snacks and refreshing drinks.</p>
                 </div>
-                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4 font-bold"><i class="fa-solid fa-house"></i></div>
-                    <h3 class="font-bold text-lg text-gray-900 mb-2">House Warming Catering</h3>
-                    <p class="text-xs text-gray-500">Delightful meals for your family and friends during new home celebrations.</p>
+                <div class="p-8 rounded-3xl bg-charcoal-950 border border-gold-500/20 hover:border-gold-500/60 transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-charcoal-950 transition"><i class="fa-solid fa-house"></i></div>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-3">House Warming Catering</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Delightful meals for your family and friends during new home celebrations.</p>
                 </div>
-                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4 font-bold"><i class="fa-solid fa-briefcase"></i></div>
-                    <h3 class="font-bold text-lg text-gray-900 mb-2">Corporate & Industrial Events</h3>
-                    <p class="text-xs text-gray-500">Large scale professional outdoor and industrial catering solutions.</p>
+                <div class="p-8 rounded-3xl bg-charcoal-950 border border-gold-500/20 hover:border-gold-500/60 transition group">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-charcoal-950 transition"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-3">Corporate & Industrial Events</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Large scale professional outdoor and industrial catering solutions.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="menu" class="py-24 px-4 sm:px-6 lg:px-8 bg-charcoal-950">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <span class="text-amber-600 font-bold text-sm uppercase tracking-wider">Discover Our Menu</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Delicious Food Offerings</h2>
-                <p class="text-gray-500">Flexible and customizable menus for all dietary preferences.</p>
+                <span class="text-gold-400 text-sm font-semibold tracking-widest uppercase">Discover Our Menu</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">Delicious Food Offerings</h2>
+                <p class="text-gray-400">Flexible and customizable menus for all dietary preferences.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Non-Veg -->
-                <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100 space-y-4">
-                    <h3 class="text-xl font-bold text-gray-900">Non-Vegetarian</h3>
-                    <p class="text-xs text-gray-600">Our mouth-watering Non-Veg dishes will surely entice your guests! Right from 'Melt in the mouth' starters to mind-blowing Biryanis and yummy gravies.</p>
-                    <ul class="space-y-2 text-xs font-semibold text-gray-700 pt-2">
+                <div class="p-8 rounded-3xl bg-charcoal-900 border border-gold-500/20 space-y-4">
+                    <h3 class="font-serif text-2xl font-bold text-gold-400">Non-Vegetarian</h3>
+                    <p class="text-xs text-gray-300">Our mouth-watering Non-Veg dishes will surely entice your guests! Right from 'Melt in the mouth' starters to mind-blowing Biryanis and yummy gravies.</p>
+                    <ul class="space-y-2 text-xs font-semibold text-gray-200 pt-2">
                         <li>• Awadhi & Hyderabadi Biryani</li>
                         <li>• Shahi Galouti & Seekh Kebabs</li>
                         <li>• Chicken Qorma & Changezi</li>
@@ -241,10 +260,10 @@
                     </ul>
                 </div>
                 <!-- Sweets -->
-                <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100 space-y-4">
-                    <h3 class="text-xl font-bold text-gray-900">Sweets</h3>
-                    <p class="text-xs text-gray-600">Sweets make the celebrations complete. We serve sensational sweets from Mughal & traditional cuisines that leave a lasting memory!</p>
-                    <ul class="space-y-2 text-xs font-semibold text-gray-700 pt-2">
+                <div class="p-8 rounded-3xl bg-charcoal-900 border border-gold-500/20 space-y-4">
+                    <h3 class="font-serif text-2xl font-bold text-gold-400">Sweets</h3>
+                    <p class="text-xs text-gray-300">Sweets make the celebrations complete. We serve sensational sweets from Mughal & traditional cuisines that leave a lasting memory!</p>
+                    <ul class="space-y-2 text-xs font-semibold text-gray-200 pt-2">
                         <li>• Shahi Tukda with Rabri</li>
                         <li>• Traditional Phirni</li>
                         <li>• Gulab Jamun & Rasmalai</li>
@@ -252,10 +271,10 @@
                     </ul>
                 </div>
                 <!-- Vegetarian -->
-                <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100 space-y-4">
-                    <h3 class="text-xl font-bold text-gray-900">Vegetarian</h3>
-                    <p class="text-xs text-gray-600">Be it North Indian or South Indian meals, crunchy starters, flavorful ghee rice, and tempting gravies are all in our range.</p>
-                    <ul class="space-y-2 text-xs font-semibold text-gray-700 pt-2">
+                <div class="p-8 rounded-3xl bg-charcoal-900 border border-gold-500/20 space-y-4">
+                    <h3 class="font-serif text-2xl font-bold text-gold-400">Vegetarian</h3>
+                    <p class="text-xs text-gray-300">Be it North Indian or South Indian meals, crunchy starters, flavorful ghee rice, and tempting gravies are all in our range.</p>
+                    <ul class="space-y-2 text-xs font-semibold text-gray-200 pt-2">
                         <li>• Paneer Tikka & Veg Starters</li>
                         <li>• Flavorful Ghee Rice</li>
                         <li>• Special Veg Biryani</li>
@@ -266,92 +285,57 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div class="max-w-7xl mx-auto text-center space-y-12">
-            <div class="max-w-3xl mx-auto space-y-4">
-                <span class="text-amber-600 font-bold text-sm uppercase tracking-wider">Gallery</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Our Work & Food Gallery</h2>
-                <p class="text-gray-500">Glimpse of our food quality, Dastarkhwan setups, and live counters.</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&q=80" alt="Dastarkhwan" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-bold text-gray-900">Shahi Dastarkhwan</h4>
-                        <p class="text-xs text-gray-500 mt-1">Traditional royal dining layout.</p>
-                    </div>
-                </div>
-                <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Live Counters" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-bold text-gray-900">Live Starters Counter</h4>
-                        <p class="text-xs text-gray-500 mt-1">Fresh kebabs & sizzling snacks.</p>
-                    </div>
-                </div>
-                <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Desserts" class="w-full h-48 object-cover">
-                    <div class="p-4 text-center">
-                        <h4 class="font-bold text-gray-900">Dessert Station</h4>
-                        <p class="text-xs text-gray-500 mt-1">Shahi tukda and chilled phirni.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-charcoal-900">
         <div class="max-w-7xl mx-auto text-center space-y-12">
             <div class="max-w-3xl mx-auto space-y-4">
-                <span class="text-amber-600 font-bold text-sm uppercase tracking-wider">Testimonials</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">What Our Clients Say</h2>
+                <span class="text-gold-400 text-sm font-semibold tracking-widest uppercase">Testimonials</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">What Our Clients Say</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 text-left space-y-3">
-                    <p class="text-xs text-gray-600 italic">"Al-Hayaat catered for our wedding reception under Mr. Sohail Khan's supervision. The Mutton Biryani and Galouti kebabs were outstanding!"</p>
-                    <h5 class="font-bold text-sm text-gray-900">— Mohammed Tariq</h5>
+                <div class="p-6 rounded-3xl bg-charcoal-950 border border-gold-500/20 text-left space-y-3">
+                    <p class="text-xs text-gray-300 italic">"Al-Hayaat catered for our wedding reception under Mr. Sohail Khan's supervision. The Mutton Biryani and Galouti kebabs were outstanding!"</p>
+                    <h5 class="font-bold text-sm text-gold-400">— Mohammed Tariq</h5>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 text-left space-y-3">
-                    <p class="text-xs text-gray-600 italic">"Best non-veg caterers in town. Very hygienic, timely service, and delicious taste. Perfect for our Aqeeqa function."</p>
-                    <h5 class="font-bold text-sm text-gray-900">— Zeeshan Ahmed</h5>
+                <div class="p-6 rounded-3xl bg-charcoal-950 border border-gold-500/20 text-left space-y-3">
+                    <p class="text-xs text-gray-300 italic">"Best non-veg caterers in town. Very hygienic, timely service, and delicious taste. Perfect for our Aqeeqa function."</p>
+                    <h5 class="font-bold text-sm text-gold-400">— Zeeshan Ahmed</h5>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100 text-left space-y-3">
-                    <p class="text-xs text-gray-600 italic">"Loved at first bite indeed! The Shahi Tukda dessert was amazing. Courteous staff and great management."</p>
-                    <h5 class="font-bold text-sm text-gray-900">— Dr. Aliyah Khan</h5>
+                <div class="p-6 rounded-3xl bg-charcoal-950 border border-gold-500/20 text-left space-y-3">
+                    <p class="text-xs text-gray-300 italic">"Loved at first bite indeed! The Shahi Tukda dessert was amazing. Courteous staff and great management."</p>
+                    <h5 class="font-bold text-sm text-gold-400">— Dr. Aliyah Khan</h5>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Us Section -->
-    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
-        <div class="max-w-4xl mx-auto space-y-12">
+    <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 bg-charcoal-950">
+        <div class="max-w-4xl mx-auto bg-charcoal-900 border border-gold-500/30 rounded-3xl p-8 sm:p-12 shadow-2xl space-y-12">
             <div class="text-center space-y-4">
-                <span class="text-amber-400 font-bold text-sm uppercase tracking-wider">Let's Talk</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Contact Us</h2>
+                <span class="text-gold-400 text-sm font-semibold tracking-widest uppercase">Let's Talk</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Contact Us</h2>
                 <p class="text-gray-400 text-sm">Get in touch with Mr. Sohail Khan for bookings, menu customization, and quotations.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="space-y-6">
                     <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0"><i class="fa-solid fa-phone"></i></div>
+                        <div class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center shrink-0"><i class="fa-solid fa-phone"></i></div>
                         <div>
                             <h5 class="font-bold text-white">Phone Numbers</h5>
                             <p class="text-sm text-gray-300">+91 96346 63124</p>
-                            <p class="text-sm text-gray-300">+91 9176 96 8282</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center shrink-0"><i class="fa-solid fa-envelope"></i></div>
                         <div>
                             <h5 class="font-bold text-white">Email Address</h5>
                             <p class="text-sm text-gray-300">info@alhayaatcatering.com</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center shrink-0"><i class="fa-solid fa-location-dot"></i></div>
                         <div>
                             <h5 class="font-bold text-white">Founder & Operations</h5>
                             <p class="text-sm text-gray-300">Mr. Sohail Khan (Delhi & NCR)</p>
@@ -359,38 +343,38 @@
                     </div>
                 </div>
 
-                <form id="contact-form" class="space-y-4 bg-gray-800 p-6 rounded-2xl border border-gray-700">
+                <form id="contact-form" class="space-y-4 bg-charcoal-950 p-6 rounded-2xl border border-gold-500/20">
                     <div>
                         <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1 font-semibold">Your Name</label>
-                        <input type="text" required class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500" placeholder="Mohammed Farzan">
+                        <input type="text" required class="w-full bg-charcoal-900 border border-gold-500/30 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-500" placeholder="Mohammed Farzan">
                     </div>
                     <div>
                         <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1 font-semibold">Phone Number</label>
-                        <input type="tel" required class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500" placeholder="+91 98765 43210">
+                        <input type="tel" required class="w-full bg-charcoal-900 border border-gold-500/30 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-500" placeholder="+91 98765 43210">
                     </div>
                     <div>
                         <label class="block text-xs uppercase tracking-wider text-gray-400 mb-1 font-semibold">Message</label>
-                        <textarea rows="3" required class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500" placeholder="Function date, guest count, and requirements..."></textarea>
+                        <textarea rows="3" required class="w-full bg-charcoal-900 border border-gold-500/30 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-500" placeholder="Function date, guest count, and requirements..."></textarea>
                     </div>
-                    <button type="submit" class="w-full py-3 rounded-xl bg-amber-600 text-white font-bold text-sm hover:bg-amber-500 transition">
+                    <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 text-charcoal-950 font-bold text-sm hover:from-gold-400 hover:to-gold-500 transition shadow-lg shadow-gold-500/10">
                         Send Inquiry Message
                     </button>
                 </form>
             </div>
-            <div id="success-msg" class="hidden p-4 rounded-xl bg-emerald-950 border border-amber-500 text-amber-400 text-center font-medium text-sm">
+            <div id="success-msg" class="hidden p-4 rounded-xl bg-emeraldCustom-950 border border-gold-500 text-gold-400 text-center font-medium text-sm">
                 <i class="fa-solid fa-circle-check mr-2"></i> Thank you! Your inquiry has been sent to Al-Hayaat Catering.
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-gray-500 py-10 px-4 text-center text-xs space-y-3">
-        <div class="flex justify-center gap-6 font-semibold text-gray-400">
-            <a href="#home" class="hover:text-amber-500">Home</a>
-            <a href="#about" class="hover:text-amber-500">About Us</a>
-            <a href="#services" class="hover:text-amber-500">Services</a>
-            <a href="#menu" class="hover:text-amber-500">Menu</a>
-            <a href="#contact" class="hover:text-amber-500">Contact Us</a>
+    <footer class="bg-charcoal-950 border-t border-gold-500/20 py-10 px-4 text-center text-xs text-gray-400 space-y-3">
+        <div class="flex justify-center gap-6 font-semibold text-gold-400">
+            <a href="#home" class="hover:text-gold-300">Home</a>
+            <a href="#about" class="hover:text-gold-300">About Us</a>
+            <a href="#services" class="hover:text-gold-300">Services</a>
+            <a href="#menu" class="hover:text-gold-300">Menu</a>
+            <a href="#contact" class="hover:text-gold-300">Contact Us</a>
         </div>
         <p>&copy; 2026 Al-Hayaat Catering (Founder: Mr. Sohail Khan). All Rights Reserved. 100% Halal Assured.</p>
     </footer>
@@ -401,7 +385,6 @@
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
 
-        // Image Slider Logic
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slider-item');
 
@@ -421,7 +404,6 @@
             showSlide(currentSlide);
         }
 
-        // Auto slide every 4 seconds
         setInterval(nextSlide, 4000);
 
         const form = document.getElementById('contact-form');
